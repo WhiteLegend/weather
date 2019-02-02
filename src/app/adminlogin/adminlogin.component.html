@@ -1,0 +1,25 @@
+<h2>Login Form</h2>
+
+<form>
+  <div class="imgcontainer">
+    <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="width:200px">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input #uname type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input #psw type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="button" (click)=adminlogin(uname.value,psw.value)>Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>

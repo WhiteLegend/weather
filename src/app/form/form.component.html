@@ -1,0 +1,76 @@
+<div class="container">
+<h1 style="height:50px; text-align: center;"><b>Weather Control Panel</b></h1>
+<div class="form-group" id="yog" style="height:100%">    
+  <div class="row">
+  <!-- <div class="col-md-1"></div> -->
+  
+  <div class="col-md-5">
+  <label for="Select Country">Select Country:</label>
+      <select #Country name="Country" class="form-control">
+        <option>Select Country </option>
+        <option value="India">India</option>
+      </select>
+      <label for="Select Country">Select State:</label>
+      <select #State name="State" class="form-control">
+        <option>Select State</option>
+        <option value="Rajasthan">Rajasthan</option>
+      </select>
+      <label for="Select Country">Select City:</label>
+      <select #City name="City" class="form-control">
+        <option>Select City </option>
+        <option value="Ajmer">Ajmer</option>
+        <option value="Alwar">Alwar</option>
+        <option value="Banswara">Banswara</option>
+        <option value="Baran">Baran</option>
+        <option value="Barmer">Barmer</option>
+        <option value="Bharatpur">Bharatpur</option>
+        <option value="Bhilwara">Bhilwara</option>
+        <option value="Bikaner">Bikaner</option>
+        <option value="Bundi">Bundi</option>
+        <option value="Chittorgarh">Chittorgarh</option>
+        <option value="Churu">Churu</option>
+        <option value="Dausa">Dausa</option>
+        <option value="Dholpur">Dholpur</option>
+        <option value="Dungarpur">Dungarpur</option>
+        <option value="Hanumangarh">Hanumangarh</option>
+        <option value="Jaipur">Jaipur</option>
+        <option value="Jaisalmer">Jaisalmer</option>
+        <option value="Jalore">Jalore</option>
+        <option value="Jhalawar">Jhalawar</option>
+        <option value="Jhunjhunu">Jhunjhunu</option>
+        <option value="Jodhpur">Jodhpur</option>
+        <option value="Karauli">Karauli</option>
+        <option value="Kota">Kota</option>
+        <option value="Nagpur">Nagpur</option>
+        <option value="Pali">Pali</option>
+        <option value="Pratapgarh">Pratapgarh</option>
+        <option value="Rajsamand">Rajsamand</option>
+        <option value="Sawai Madhopur">Sawai Madhopur</option>
+        <option value="Sikar">Sikar</option>
+        <option value="Sirohi">Sirohi</option>
+        <option value="Sri Ganganagar">Sri Ganganagar</option>
+        <option value="Tonk">Tonk</option>
+        <option value="Udaipur">Udaipur</option>
+      </select>  
+      <label for="Select Country">Temprature in degree:</label>
+      <!-- <input #Temperature type="text" name="Temperature" ><br> -->
+      
+          
+          <input type='file' (change)="fileChanged($event)">
+         
+      
+      <!-- <b>Weather</b><br>
+        <input #Weather type="text" name="Weather"><br> -->
+
+       
+
+        <label for="Select Country">Date:</label>
+<input #Date type="date" name="DOR" class="form-control" placeholder="DD/MM/YYYY" >              
+<!-- <b>Time</b>
+<input #Time type="text"  class="form-control" placeholder="hh/mm/ss" required> -->
+<button  type="btn" (click)="submit(Country.value,State.value,City.value,Date.value)">Submit</button></div>
+  <!-- <button type="btn" (click)=" fileChanged()"> -->
+</div>
+</div>
+</div>
+
